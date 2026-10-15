@@ -1,0 +1,120 @@
+﻿id_venda;data da venda;cliente;curso;modalidade;cidade;vendedor;quantidade;valor_unitario;custo_unitario;desconto;status do pagamento;faturamento_bruto;faturamento líquido;custo_total;lucro estimado;faixa_lucro;venda_alto_valor
+1;2026-02-22;Enzo Moreira;Segurança do Trabalho;Presencial;Guarulhos;Diego Alves;1;850;350;0.0;Pago;850;850.0;350;500.0;Lucro positivo;Não
+2;2026-04-12;Enzo Moreira;Administração;Ead;Campinas;Diego Alves;1;650;250;100.0;Pago;650;550.0;250;300.0;Lucro positivo;Não
+3;2026-05-23;Julia Ferreira;Análise de Dados;Presencial;Santos;Ana Lima;1;1450;600;150.0;Pago;1450;1300.0;600;700.0;Lucro positivo;Não
+4;2026-01-23;Leticia Nunes;Administração;Híbrido;São Paulo;Diego Alves;1;650;250;100.0;Pago;650;550.0;250;300.0;Lucro positivo;Não
+5;2026-02-05;Lucas Santos;Administração;Híbrido;Campinas;Carla Souza;1;700;250;100.0;Pago;700;600.0;250;350.0;Lucro positivo;Não
+6;2026-07-06;Rafael Almeida;Administração;Ead;Santos;Bruno Costa;2;600;270;0.0;Pago;1200;1200.0;540;660.0;Lucro positivo;Não
+7;2026-03-25;Leticia Nunes;Segurança do Trabalho;Ead;Santos;Bruno Costa;1;800;350;100.0;Pago;800;700.0;350;350.0;Lucro positivo;Não
+8;2026-07-25;Larissa Gomes;Segurança do Trabalho;Presencial;Campinas;Carla Souza;1;800;350;0.0;Pendente;800;800.0;350;450.0;Lucro positivo;Não
+9;2026-05-07;Enzo Moreira;Logística;Híbrido;Santos;Diego Alves;1;780;320;0.0;Pago;780;780.0;320;460.0;Lucro positivo;Não
+10;2026-01-25;Gabriel Costa;Análise de Dados;Presencial;Campinas;Diego Alves;1;1500;600;100.0;Pago;1500;1400.0;600;800.0;Lucro positivo;Não
+11;2026-01-06;Gabriel Costa;Análise de Dados;Híbrido;Guarulhos;Carla Souza;1;1500;620;100.0;Pago;1500;1400.0;620;780.0;Lucro positivo;Não
+12;2026-05-15;Sofia Teixeira;Análise de Dados;Presencial;Guarulhos;Ana Lima;1;850;370;0.0;Pago;850;850.0;370;480.0;Lucro positivo;Não
+13;2026-03-24;Enzo Moreira;Segurança do Trabalho;Híbrido;São Paulo;Carla Souza;1;900;350;0.0;Pago;900;900.0;350;550.0;Lucro positivo;Não
+14;2026-02-10;Beatriz Lima;Desenvolvimento de Sistemas;Híbrido;Sorocaba;Ana Lima;1;1200;500;0.0;Pago;1200;1200.0;500;700.0;Lucro positivo;Não
+15;2026-09-28;Davi Freitas;Análise de Dados;Ead;Campinas;Bruno Costa;2;1500;620;100.0;Pago;3000;2900.0;1240;1660.0;Lucro positivo;Sim
+16;2026-05-07;Pedro Martins;Segurança do Trabalho;Presencial;Santos;Ana Lima;1;850;370;100.0;Pago;850;750.0;370;380.0;Lucro positivo;Não
+17;2026-01-31;Pedro Martins;Análise de Dados;Presencial;São Paulo;Carla Souza;1;1550;600;0.0;Pago;1550;1550.0;600;950.0;Lucro positivo;Não
+18;2026-08-31;Pedro Martins;Administração;Ead;Sorocaba;Bruno Costa;1;650;270;0.0;Pago;650;650.0;270;380.0;Lucro positivo;Não
+19;2026-01-28;Gabriel Costa;Administração;Presencial;Sorocaba;Carla Souza;1;650;250;50.0;Pago;650;600.0;250;350.0;Lucro positivo;Não
+20;2026-05-23;Leticia Nunes;Administração;Presencial;São Paulo;Diego Alves;1;650;270;0.0;Pago;650;650.0;270;380.0;Lucro positivo;Não
+21;2026-05-02;Rafael Almeida;Análise de Dados;Ead;Sorocaba;Diego Alves;1;1550;580;0.0;Pendente;1550;1550.0;580;970.0;Lucro positivo;Não
+22;2026-07-19;Larissa Gomes;Logística;Ead;Santos;Diego Alves;2;730;300;50.0;Pago;1460;1410.0;600;810.0;Lucro positivo;Não
+23;2026-04-22;Lucas Santos;Segurança do Trabalho;Híbrido;Guarulhos;Ana Lima;3;900;370;0.0;Pago;2700;2700.0;1110;1590.0;Lucro positivo;Sim
+24;2026-09-29;Rafael Almeida;Segurança do Trabalho;Presencial;Guarulhos;Ana Lima;1;800;370;100.0;Pendente;800;700.0;370;330.0;Lucro positivo;Não
+25;2026-05-07;Clara Batista;Logística;Híbrido;São Paulo;Ana Lima;1;730;300;50.0;Pago;730;680.0;300;380.0;Lucro positivo;Não
+26;2026-06-10;Pedro Martins;Desenvolvimento de Sistemas;Ead;Sorocaba;Bruno Costa;1;1250;500;0.0;Pago;1250;1250.0;500;750.0;Lucro positivo;Não
+27;2026-02-21;Beatriz Lima;Segurança do Trabalho;Híbrido;Campinas;Carla Souza;1;850;350;0.0;Pago;850;850.0;350;500.0;Lucro positivo;Não
+28;2026-08-13;Enzo Moreira;Logística;Híbrido;Santos;Ana Lima;2;730;300;0.0;Pago;1460;1460.0;600;860.0;Lucro positivo;Não
+29;2026-02-24;Enzo Moreira;Segurança do Trabalho;Presencial;Santos;Carla Souza;2;850;330;0.0;Pago;1700;1700.0;660;1040.0;Lucro positivo;Não
+30;2026-05-16;Sofia Teixeira;Análise de Dados;Ead;Santos;Ana Lima;1;1500;600;150.0;Pago;1500;1350.0;600;750.0;Lucro positivo;Não
+31;2026-03-08;Larissa Gomes;Administração;Presencial;Sorocaba;Diego Alves;1;650;230;0.0;Pago;650;650.0;230;420.0;Lucro positivo;Não
+32;2026-07-09;Clara Batista;Análise de Dados;Híbrido;Campinas;Diego Alves;1;1450;600;100.0;Pago;1450;1350.0;600;750.0;Lucro positivo;Não
+33;2026-05-08;Gabriel Costa;Logística;Ead;Guarulhos;Diego Alves;1;780;280;0.0;Pago;780;780.0;280;500.0;Lucro positivo;Não
+34;2026-01-13;Rafael Almeida;Análise de Dados;Híbrido;Santos;Diego Alves;2;1500;600;0.0;Pendente;3000;3000.0;1200;1800.0;Lucro positivo;Sim
+35;2026-02-25;Isabela Mendes;Segurança do Trabalho;Presencial;Sorocaba;Bruno Costa;2;850;350;0.0;Pendente;1700;1700.0;700;1000.0;Lucro positivo;Não
+36;2026-04-27;Pedro Martins;Logística;Presencial;Campinas;Diego Alves;2;780;300;0.0;Pendente;1560;1560.0;600;960.0;Lucro positivo;Não
+37;2026-07-24;Enzo Moreira;Enfermagem;Ead;São Paulo;Ana Lima;1;850;400;0.0;Pago;850;850.0;400;450.0;Lucro positivo;Não
+38;2026-06-26;Amanda Carvalho;Enfermagem;Ead;Guarulhos;Ana Lima;1;900;380;0.0;Pago;900;900.0;380;520.0;Lucro positivo;Não
+39;2026-01-01;Sofia Teixeira;Desenvolvimento de Sistemas;Híbrido;Campinas;Carla Souza;2;1200;500;0.0;Pago;2400;2400.0;1000;1400.0;Lucro positivo;Sim
+40;2026-06-03;Sofia Teixeira;Desenvolvimento de Sistemas;Ead;Sorocaba;Carla Souza;1;1200;500;150.0;Pendente;1200;1050.0;500;550.0;Lucro positivo;Não
+41;2026-07-14;Rafael Almeida;Desenvolvimento de Sistemas;Híbrido;Guarulhos;Carla Souza;1;1250;500;0.0;Pago;1250;1250.0;500;750.0;Lucro positivo;Não
+42;2026-06-14;Leticia Nunes;Desenvolvimento de Sistemas;Ead;Sorocaba;Bruno Costa;1;1150;500;0.0;Pago;1150;1150.0;500;650.0;Lucro positivo;Não
+43;2026-06-21;Beatriz Lima;Análise de Dados;Presencial;Santos;Bruno Costa;1;1500;580;0.0;Pago;1500;1500.0;580;920.0;Lucro positivo;Não
+44;2026-02-07;Leticia Nunes;Logística;Ead;Guarulhos;Bruno Costa;1;730;300;50.0;Pago;730;680.0;300;380.0;Lucro positivo;Não
+45;2026-01-03;Gabriel Costa;Segurança do Trabalho;Ead;Campinas;Bruno Costa;1;850;370;0.0;Pago;850;850.0;370;480.0;Lucro positivo;Não
+46;2026-08-26;Sofia Teixeira;Segurança do Trabalho;Híbrido;Guarulhos;Carla Souza;1;800;350;0.0;Pago;800;800.0;350;450.0;Lucro positivo;Não
+47;2026-03-23;Vinicius Cardoso;Desenvolvimento de Sistemas;Ead;Santos;Bruno Costa;1;1250;520;100.0;Pago;1250;1150.0;520;630.0;Lucro positivo;Não
+48;2026-08-14;Beatriz Lima;Segurança do Trabalho;Híbrido;Santos;Bruno Costa;1;900;370;150.0;Pago;900;750.0;370;380.0;Lucro positivo;Não
+49;2026-07-16;Julia Ferreira;Enfermagem;Híbrido;Campinas;Ana Lima;1;950;380;0.0;Pago;950;950.0;380;570.0;Lucro positivo;Não
+50;2026-08-04;Não informado;Desenvolvimento de Sistemas;Híbrido;São Paulo;Diego Alves;1;1250;520;50.0;Pago;1250;1200.0;520;680.0;Lucro positivo;Não
+51;2026-08-03;Enzo Moreira;Desenvolvimento de Sistemas;Híbrido;Guarulhos;Bruno Costa;1;1200;500;50.0;Pendente;1200;1150.0;500;650.0;Lucro positivo;Não
+52;2026-07-27;Rafael Almeida;Desenvolvimento de Sistemas;Ead;Campinas;Ana Lima;1;1200;520;0.0;Pago;1200;1200.0;520;680.0;Lucro positivo;Não
+53;2026-08-25;Rafael Almeida;Desenvolvimento de Sistemas;Presencial;Santos;Diego Alves;1;1150;480;150.0;Pago;1150;1000.0;480;520.0;Lucro positivo;Não
+54;2026-08-04;Larissa Gomes;Enfermagem;Presencial;Sorocaba;Ana Lima;1;900;400;50.0;Pago;900;850.0;400;450.0;Lucro positivo;Não
+55;2026-01-21;Mariana Oliveira;Segurança do Trabalho;Presencial;Campinas;Ana Lima;1;850;350;150.0;Pago;850;700.0;350;350.0;Lucro positivo;Não
+56;2026-04-22;Leticia Nunes;Análise de Dados;Híbrido;Santos;Carla Souza;1;1500;620;150.0;Pago;1500;1350.0;620;730.0;Lucro positivo;Não
+57;2026-01-14;Felipe Ribeiro;Logística;Híbrido;Sorocaba;Diego Alves;1;730;300;0.0;Pago;730;730.0;300;430.0;Lucro positivo;Não
+58;2026-06-04;Davi Freitas;Segurança do Trabalho;Presencial;Guarulhos;Ana Lima;1;900;350;0.0;Pago;900;900.0;350;550.0;Lucro positivo;Não
+59;2026-01-07;Matheus Araujo;Enfermagem;Ead;São Paulo;Diego Alves;1;900;380;100.0;Pago;900;800.0;380;420.0;Lucro positivo;Não
+60;2026-09-25;Larissa Gomes;Enfermagem;Híbrido;Guarulhos;Diego Alves;1;900;400;50.0;Pago;900;850.0;400;450.0;Lucro positivo;Não
+61;2026-02-14;Larissa Gomes;Desenvolvimento de Sistemas;Ead;Campinas;Diego Alves;1;1250;500;0.0;Pendente;1250;1250.0;500;750.0;Lucro positivo;Não
+62;2026-06-16;Rafael Almeida;Análise de Dados;Ead;Campinas;Carla Souza;1;1500;600;0.0;Pago;1500;1500.0;600;900.0;Lucro positivo;Não
+63;2026-04-08;Beatriz Lima;Enfermagem;Presencial;Sorocaba;Diego Alves;1;950;400;100.0;Pago;950;850.0;400;450.0;Lucro positivo;Não
+64;2026-02-17;Felipe Ribeiro;Análise de Dados;Presencial;Sorocaba;Bruno Costa;2;1500;620;0.0;Pendente;3000;3000.0;1240;1760.0;Lucro positivo;Sim
+65;2026-08-06;Enzo Moreira;Enfermagem;Ead;Santos;Diego Alves;1;900;420;100.0;Pago;900;800.0;420;380.0;Lucro positivo;Não
+66;2026-03-03;Enzo Moreira;Enfermagem;Híbrido;Campinas;Bruno Costa;1;900;380;150.0;Pago;900;750.0;380;370.0;Lucro positivo;Não
+67;2026-06-01;Pedro Martins;Logística;Ead;Campinas;Carla Souza;2;780;300;0.0;Pendente;1560;1560.0;600;960.0;Lucro positivo;Não
+68;2026-05-30;Julia Ferreira;Administração;Híbrido;Sorocaba;Ana Lima;1;650;250;0.0;Cancelado;650;650.0;250;400.0;Lucro positivo;Não
+69;2026-01-27;Larissa Gomes;Administração;Ead;São Paulo;Ana Lima;1;650;270;50.0;Pago;650;600.0;270;330.0;Lucro positivo;Não
+70;2026-06-05;Beatriz Lima;Desenvolvimento de Sistemas;Presencial;São Paulo;Diego Alves;1;1250;480;0.0;Pago;1250;1250.0;480;770.0;Lucro positivo;Não
+71;2026-08-15;Felipe Ribeiro;Análise de Dados;Híbrido;Sorocaba;Carla Souza;1;1550;600;100.0;Pago;1550;1450.0;600;850.0;Lucro positivo;Não
+72;2026-05-16;Beatriz Lima;Análise de Dados;Presencial;Campinas;Bruno Costa;1;1550;580;0.0;Pago;1550;1550.0;580;970.0;Lucro positivo;Não
+73;2026-08-29;Felipe Ribeiro;Análise de Dados;Presencial;Campinas;Carla Souza;1;1450;620;50.0;Pago;1450;1400.0;620;780.0;Lucro positivo;Não
+74;2026-05-16;Clara Batista;Segurança do Trabalho;Híbrido;Campinas;Diego Alves;1;850;330;150.0;Pago;850;700.0;330;370.0;Lucro positivo;Não
+75;2026-03-26;Felipe Ribeiro;Administração;Híbrido;Guarulhos;Carla Souza;1;650;250;0.0;Pago;650;650.0;250;400.0;Lucro positivo;Não
+76;2026-09-10;Leticia Nunes;Desenvolvimento de Sistemas;Presencial;Guarulhos;Ana Lima;2;1200;520;0.0;Pago;2400;2400.0;1040;1360.0;Lucro positivo;Sim
+77;2026-01-11;Larissa Gomes;Desenvolvimento de Sistemas;Híbrido;São Paulo;Bruno Costa;2;1250;500;0.0;Pago;2500;2500.0;1000;1500.0;Lucro positivo;Sim
+78;2026-08-12;Vinicius Cardoso;Desenvolvimento de Sistemas;Presencial;Sorocaba;Carla Souza;1;1200;500;0.0;Cancelado;1200;1200.0;500;700.0;Lucro positivo;Não
+79;2026-09-11;Felipe Ribeiro;Desenvolvimento de Sistemas;Híbrido;Sorocaba;Ana Lima;1;1150;500;0.0;Pago;1150;1150.0;500;650.0;Lucro positivo;Não
+80;2026-07-26;Sofia Teixeira;Desenvolvimento de Sistemas;Presencial;Guarulhos;Diego Alves;1;1200;500;0.0;Cancelado;1200;1200.0;500;700.0;Lucro positivo;Não
+81;2026-08-15;Lucas Santos;Desenvolvimento de Sistemas;Presencial;Santos;Bruno Costa;1;1250;500;100.0;Pago;1250;1150.0;500;650.0;Lucro positivo;Não
+82;2026-05-03;Rafael Almeida;Enfermagem;Ead;Guarulhos;Ana Lima;1;900;380;0.0;Cancelado;900;900.0;380;520.0;Lucro positivo;Não
+83;2026-03-20;Vinicius Cardoso;Análise de Dados;Híbrido;Santos;Carla Souza;1;1500;580;50.0;Cancelado;1500;1450.0;580;870.0;Lucro positivo;Não
+84;2026-07-16;Camila Rocha;Desenvolvimento de Sistemas;Híbrido;Guarulhos;Bruno Costa;2;1200;500;50.0;Pago;2400;2350.0;1000;1350.0;Lucro positivo;Sim
+85;2026-01-02;Felipe Ribeiro;Administração;Híbrido;Santos;Diego Alves;1;650;250;100.0;Pago;650;550.0;250;300.0;Lucro positivo;Não
+86;2026-07-13;Leticia Nunes;Logística;Ead;Campinas;Bruno Costa;1;780;300;0.0;Pago;780;780.0;300;480.0;Lucro positivo;Não
+87;2026-07-15;Isabela Mendes;Análise de Dados;Híbrido;Campinas;Diego Alves;1;1500;580;0.0;Pago;1500;1500.0;580;920.0;Lucro positivo;Não
+88;2026-08-14;Gabriel Costa;Administração;Híbrido;Sorocaba;Ana Lima;1;700;250;0.0;Pendente;700;700.0;250;450.0;Lucro positivo;Não
+89;2026-05-16;Amanda Carvalho;Segurança do Trabalho;Híbrido;Sorocaba;Ana Lima;1;1200;330;50.0;Pendente;1200;1150.0;330;820.0;Lucro positivo;Não
+90;2026-09-07;Enzo Moreira;Enfermagem;Presencial;Guarulhos;Ana Lima;2;950;420;0.0;Pago;1900;1900.0;840;1060.0;Lucro positivo;Não
+91;2026-02-20;Gabriel Costa;Logística;Ead;Campinas;Carla Souza;1;780;300;150.0;Pago;780;630.0;300;330.0;Lucro positivo;Não
+92;2026-03-16;Pedro Martins;Administração;Híbrido;Sorocaba;Bruno Costa;1;600;250;0.0;Pago;600;600.0;250;350.0;Lucro positivo;Não
+93;2026-09-12;Clara Batista;Logística;Presencial;Campinas;Diego Alves;1;830;320;100.0;Pago;830;730.0;320;410.0;Lucro positivo;Não
+94;2026-03-22;Beatriz Lima;Segurança do Trabalho;Ead;Santos;Carla Souza;1;850;330;50.0;Pendente;850;800.0;330;470.0;Lucro positivo;Não
+95;2026-07-16;Vinicius Cardoso;Segurança do Trabalho;Presencial;Campinas;Diego Alves;3;850;370;0.0;Pago;2550;2550.0;1110;1440.0;Lucro positivo;Sim
+96;2026-07-22;Larissa Gomes;Análise de Dados;Presencial;Guarulhos;Ana Lima;1;1500;600;0.0;Cancelado;1500;1500.0;600;900.0;Lucro positivo;Não
+97;2026-04-23;Camila Rocha;Análise de Dados;Híbrido;Santos;Bruno Costa;2;1500;600;100.0;Pendente;3000;2900.0;1200;1700.0;Lucro positivo;Sim
+98;2026-07-06;Julia Ferreira;Segurança do Trabalho;Presencial;Santos;Carla Souza;1;800;350;50.0;Pago;800;750.0;350;400.0;Lucro positivo;Não
+99;2026-07-07;Sofia Teixeira;Segurança do Trabalho;Híbrido;Santos;Bruno Costa;1;850;350;100.0;Pendente;850;750.0;350;400.0;Lucro positivo;Não
+100;2026-02-28;Leticia Nunes;Enfermagem;Presencial;Campinas;Bruno Costa;2;900;400;150.0;Pendente;1800;1650.0;800;850.0;Lucro positivo;Não
+101;2026-01-08;Larissa Gomes;Segurança do Trabalho;Híbrido;São Paulo;Diego Alves;2;850;350;0.0;Pendente;1700;1700.0;700;1000.0;Lucro positivo;Não
+102;2026-02-25;Pedro Martins;Enfermagem;Ead;São Paulo;Ana Lima;1;900;420;150.0;Cancelado;900;750.0;420;330.0;Lucro positivo;Não
+103;2026-07-29;Gabriel Costa;Análise de Dados;Presencial;São Paulo;Ana Lima;1;1450;620;150.0;Pago;1450;1300.0;620;680.0;Lucro positivo;Não
+104;2026-03-11;Isabela Mendes;Enfermagem;Ead;Santos;Diego Alves;3;850;380;0.0;Pendente;2550;2550.0;1140;1410.0;Lucro positivo;Sim
+105;2026-09-08;Davi Freitas;Análise de Dados;Ead;Santos;Ana Lima;2;1500;620;150.0;Pago;3000;2850.0;1240;1610.0;Lucro positivo;Sim
+106;2026-02-20;Thiago Barros;Segurança do Trabalho;Híbrido;Santos;Ana Lima;1;850;370;0.0;Pendente;850;850.0;370;480.0;Lucro positivo;Não
+107;2026-01-11;Lucas Santos;Desenvolvimento de Sistemas;Ead;Campinas;Bruno Costa;1;1150;520;0.0;Pago;1150;1150.0;520;630.0;Lucro positivo;Não
+108;2026-04-30;Amanda Carvalho;Análise de Dados;Presencial;Guarulhos;Ana Lima;1;1550;600;100.0;Pago;1550;1450.0;600;850.0;Lucro positivo;Não
+109;2026-03-31;Gabriel Costa;Enfermagem;Híbrido;São Paulo;Bruno Costa;2;900;400;100.0;Pago;1800;1700.0;800;900.0;Lucro positivo;Não
+110;2026-01-27;Julia Ferreira;Administração;Híbrido;Sorocaba;Ana Lima;1;650;250;0.0;Pago;650;650.0;250;400.0;Lucro positivo;Não
+112;2026-01-16;Lucas Santos;Segurança do Trabalho;Ead;Sorocaba;Diego Alves;2;900;350;50.0;Pago;1800;1750.0;700;1050.0;Lucro positivo;Não
+113;2026-03-17;Beatriz Lima;Segurança do Trabalho;Presencial;Santos;Carla Souza;1;850;330;0.0;Pago;850;850.0;330;520.0;Lucro positivo;Não
+114;2026-08-09;Gabriel Costa;Desenvolvimento de Sistemas;Híbrido;São Paulo;Bruno Costa;3;1250;500;50.0;Pago;3750;3700.0;1500;2200.0;Lucro positivo;Sim
+115;2026-07-24;Matheus Araujo;Desenvolvimento de Sistemas;Híbrido;São Paulo;Carla Souza;1;1200;520;0.0;Pendente;1200;1200.0;520;680.0;Lucro positivo;Não
+116;2026-08-31;Beatriz Lima;Desenvolvimento de Sistemas;Presencial;São Paulo;Ana Lima;1;1200;500;0.0;Pago;1200;1200.0;500;700.0;Lucro positivo;Não
+117;2026-06-18;Gabriel Costa;Desenvolvimento de Sistemas;Ead;Santos;Diego Alves;1;1200;500;100.0;Pago;1200;1100.0;500;600.0;Lucro positivo;Não
+118;2026-09-17;Camila Rocha;Segurança do Trabalho;Presencial;Sorocaba;Bruno Costa;1;850;350;0.0;Pago;850;850.0;350;500.0;Lucro positivo;Não
+119;2026-04-26;Matheus Araujo;Administração;Híbrido;Guarulhos;Ana Lima;1;700;250;0.0;Pendente;700;700.0;250;450.0;Lucro positivo;Não
+120;2026-06-08;Amanda Carvalho;Análise de Dados;Ead;São Paulo;Bruno Costa;2;1500;580;0.0;Pago;3000;3000.0;1160;1840.0;Lucro positivo;Sim

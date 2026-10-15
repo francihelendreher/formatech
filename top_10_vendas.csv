@@ -1,0 +1,11 @@
+﻿id_venda;data da venda;cliente;curso;modalidade;cidade;vendedor;quantidade;valor_unitario;custo_unitario;desconto;status do pagamento;faturamento_bruto;faturamento líquido;custo_total;lucro estimado;faixa_lucro;venda_alto_valor
+114;2026-08-09;Gabriel Costa;Desenvolvimento de Sistemas;Híbrido;São Paulo;Bruno Costa;3;1250;500;50.0;Pago;3750;3700.0;1500;2200.0;Lucro positivo;Sim
+64;2026-02-17;Felipe Ribeiro;Análise de Dados;Presencial;Sorocaba;Bruno Costa;2;1500;620;0.0;Pendente;3000;3000.0;1240;1760.0;Lucro positivo;Sim
+34;2026-01-13;Rafael Almeida;Análise de Dados;Híbrido;Santos;Diego Alves;2;1500;600;0.0;Pendente;3000;3000.0;1200;1800.0;Lucro positivo;Sim
+120;2026-06-08;Amanda Carvalho;Análise de Dados;Ead;São Paulo;Bruno Costa;2;1500;580;0.0;Pago;3000;3000.0;1160;1840.0;Lucro positivo;Sim
+97;2026-04-23;Camila Rocha;Análise de Dados;Híbrido;Santos;Bruno Costa;2;1500;600;100.0;Pendente;3000;2900.0;1200;1700.0;Lucro positivo;Sim
+15;2026-09-28;Davi Freitas;Análise de Dados;Ead;Campinas;Bruno Costa;2;1500;620;100.0;Pago;3000;2900.0;1240;1660.0;Lucro positivo;Sim
+105;2026-09-08;Davi Freitas;Análise de Dados;Ead;Santos;Ana Lima;2;1500;620;150.0;Pago;3000;2850.0;1240;1610.0;Lucro positivo;Sim
+23;2026-04-22;Lucas Santos;Segurança do Trabalho;Híbrido;Guarulhos;Ana Lima;3;900;370;0.0;Pago;2700;2700.0;1110;1590.0;Lucro positivo;Sim
+104;2026-03-11;Isabela Mendes;Enfermagem;Ead;Santos;Diego Alves;3;850;380;0.0;Pendente;2550;2550.0;1140;1410.0;Lucro positivo;Sim
+95;2026-07-16;Vinicius Cardoso;Segurança do Trabalho;Presencial;Campinas;Diego Alves;3;850;370;0.0;Pago;2550;2550.0;1110;1440.0;Lucro positivo;Sim

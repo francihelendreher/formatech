@@ -1,0 +1,121 @@
+﻿id_venda;data_venda;cliente;curso;modalidade;cidade;vendedor;quantidade;valor_unitario;custo_unitario;desconto;status_pagamento
+1;22/02/2026;Enzo Moreira;Segurança do Trabalho;Presencial;Guarulhos;Diego Alves;1;850;350;0.0;Pago
+2;12/04/2026;Enzo Moreira;Administração;EAD;Campinas;Diego Alves;1;650;250;100.0;Pago
+3;23/05/2026;Julia Ferreira;Análise de Dados;Presencial;Santos;Ana Lima;1;1450;600;150.0;Pago
+4;23/01/2026;Leticia Nunes;Administração;Híbrido;São Paulo;Diego Alves;1;650;250;100.0;Pago
+5;05/02/2026;  lucas santos  ;Administração;Híbrido;Campinas;Carla Souza;1;700;250;100.0;Pago
+6;06/07/2026;Rafael Almeida;Administração;EAD;Santos;Bruno Costa;2;600;270;0.0;Pago
+7;25/03/2026;Leticia Nunes;Segurança do Trabalho;EAD;Santos;Bruno Costa;1;800;350;100.0;Pago
+8;25/07/2026;Larissa Gomes;Segurança do Trabalho;Presencial;Campinas;Carla Souza;1;800;350;0.0;Pendente
+9;07/05/2026;Enzo Moreira;Logística;Híbrido;Santos;Diego Alves;1;780;320;0.0;Pago
+10;25/01/2026;Gabriel Costa;Análise de Dados;Presencial;Campinas;Diego Alves;1;1500;600;100.0;Pago
+11;06/01/2026;Gabriel Costa;Análise de Dados;Híbrido;Guarulhos;Carla Souza;1;1500;620;100.0;Pago
+12;15/05/2026;Sofia Teixeira; analise de dados ;Presencial;Guarulhos;Ana Lima;1;850;370;0.0;Pago
+13;24/03/2026;Enzo Moreira;Segurança do Trabalho;Híbrido;São Paulo;Carla Souza;1;900;350;0.0;Pago
+14;10/02/2026;Beatriz Lima;Desenvolvimento de Sistemas;Híbrido;Sorocaba;Ana Lima;1;1200;500;0.0;Pago
+15;28/09/2026;Davi Freitas;Análise de Dados;EAD;Campinas;Bruno Costa;2;1500;620;100.0;Pago
+16;07/05/2026;Pedro Martins;Segurança do Trabalho;Presencial;Santos;Ana Lima;1;850;370;100.0;Pago
+17;31/01/2026;Pedro Martins;Análise de Dados;Presencial;São Paulo;Carla Souza;1;1550;600;0.0;Pago
+18;31/08/2026;Pedro Martins;Administração;ead ;Sorocaba;Bruno Costa;1;650;270;0.0;Pago
+19;28/01/2026;Gabriel Costa;Administração;Presencial;Sorocaba;Carla Souza;1;650;250;50.0;Pago
+20;23/05/2026;Leticia Nunes;Administração;Presencial;São Paulo;Diego Alves;1;650;270;0.0;Pago
+21;02/05/2026;Rafael Almeida;Análise de Dados;EAD;Sorocaba;Diego Alves;1;1550;580;0.0;Pendente
+22;19/07/2026;Larissa Gomes;Logística;EAD;Santos;Diego Alves;2;730;300;50.0;Pago
+23;22/04/2026;Lucas Santos;Segurança do Trabalho;Híbrido;Guarulhos;Ana Lima;3;900;370;0.0;Pago
+24;29/09/2026;Rafael Almeida;Segurança do Trabalho;Presencial;Guarulhos;Ana Lima;1;800;370;100.0;Pendente
+25;07/05/2026;Clara Batista;Logística;Híbrido;São Paulo;Ana Lima;1;730;300;50.0;PAGO
+26;10/06/2026;Pedro Martins;Desenvolvimento de Sistemas;EAD;Sorocaba;Bruno Costa;1;1250;500;0.0;Pago
+27;21/02/2026;Beatriz Lima;Segurança do Trabalho;Híbrido;Campinas;Carla Souza;1;850;350;0.0;Pago
+28;13/08/2026;Enzo Moreira;Logística;Híbrido;Santos;Ana Lima;2;730;300;0.0;Pago
+29;24/02/2026;Enzo Moreira;Segurança do Trabalho;Presencial;Santos;Carla Souza;2;850;330;0.0;Pago
+30;16/05/2026;Sofia Teixeira;Análise de Dados;EAD;Santos;Ana Lima;1;1500;600;150.0;Pago
+31;08/03/2026;Larissa Gomes;Administração;Presencial;Sorocaba;Diego Alves;1;650;230;0.0;Pago
+32;09/07/2026;Clara Batista;Análise de Dados;Híbrido;Campinas;Diego Alves;1;1450;600;100.0;Pago
+33;08/05/2026;Gabriel Costa;Logística;EAD;Guarulhos;Diego Alves;1;780;280;0.0;Pago
+34;13/01/2026;Rafael Almeida;Análise de Dados;Híbrido;Santos;Diego Alves;2;1500;600;0.0;Pendente
+35;25/02/2026;Isabela Mendes;Segurança do Trabalho;Presencial;Sorocaba;Bruno Costa;2;850;350;0.0;Pendente
+36;27/04/2026;Pedro Martins;Logística;Presencial; campinas ;Diego Alves;2;780;300;0.0;Pendente
+37;24/07/2026;Enzo Moreira;Enfermagem;EAD;São Paulo;Ana Lima;1;850;400;0.0;Pago
+38;26/06/2026;Amanda Carvalho;Enfermagem;EAD;Guarulhos;Ana Lima;1;900;380;0.0;Pago
+39;01/01/2026;Sofia Teixeira;Desenvolvimento de Sistemas;Híbrido;Campinas;Carla Souza;2;1200;500;0.0;Pago
+40;03/06/2026;Sofia Teixeira;Desenvolvimento de Sistemas;EAD;Sorocaba;Carla Souza;1;1200;500;150.0;Pendente
+41;14/07/2026;Rafael Almeida;Desenvolvimento de Sistemas;Híbrido;Guarulhos;Carla Souza;1;1250;500;0.0;Pago
+42;14/06/2026;Leticia Nunes;Desenvolvimento de Sistemas;EAD;Sorocaba;Bruno Costa;1;1150;500;0.0;Pago
+43;21/06/2026;Beatriz Lima;Análise de Dados;Presencial;Santos;Bruno Costa;1;1500;580;0.0;Pago
+44;07/02/2026;Leticia Nunes;Logística;EAD;Guarulhos;Bruno Costa;1;730;300;50.0;Pago
+45;03/01/2026;Gabriel Costa;Segurança do Trabalho;EAD;Campinas;Bruno Costa;1;850;370;0.0;Pago
+46;26/08/2026;Sofia Teixeira;Segurança do Trabalho;Híbrido;Guarulhos;Carla Souza;1;800;350;0.0;Pago
+47;23/03/2026;Vinicius Cardoso;Desenvolvimento de Sistemas;EAD;Santos;Bruno Costa;1;1250;520;100.0;Pago
+48;14/08/2026;Beatriz Lima;Segurança do Trabalho;Híbrido;Santos;Bruno Costa;1;900;370;150.0;Pago
+49;16/07/2026;Julia Ferreira;Enfermagem;Híbrido;Campinas;Ana Lima;1;950;380;0.0;Pago
+50;04/08/2026;;Desenvolvimento de Sistemas;Híbrido;São Paulo;Diego Alves;1;1250;520;50.0;Pago
+51;03/08/2026;Enzo Moreira;Desenvolvimento de Sistemas;Híbrido;Guarulhos;Bruno Costa;1;1200;500;50.0;Pendente
+52;27/07/2026;Rafael Almeida;Desenvolvimento de Sistemas;EAD;Campinas;Ana Lima;1;1200;520;0.0;Pago
+53;25/08/2026;Rafael Almeida;Desenvolvimento de Sistemas;Presencial;Santos;Diego Alves;1;1150;480;150.0;Pago
+54;04/08/2026;Larissa Gomes;Enfermagem;Presencial;Sorocaba;Ana Lima;1;900;400;50.0;Pago
+55;21/01/2026;Mariana Oliveira;Segurança do Trabalho;Presencial;Campinas;Ana Lima;1;850;350;150.0;Pago
+56;22/04/2026;Leticia Nunes;Análise de Dados;Híbrido;Santos;Carla Souza;1;1500;620;150.0;Pago
+57;14/01/2026;Felipe Ribeiro;Logística;Híbrido;Sorocaba;Diego Alves;1;730;300;0.0;Pago
+58;04/06/2026;Davi Freitas;Segurança do Trabalho;Presencial;Guarulhos;Ana Lima;1;900;350;0.0;Pago
+59;07/01/2026;Matheus Araujo;Enfermagem;EAD;São Paulo;Diego Alves;1;900;380;100.0;Pago
+60;25/09/2026;Larissa Gomes;Enfermagem;Híbrido;Guarulhos;Diego Alves;1;900;400;50.0;Pago
+61;14/02/2026;Larissa Gomes;Desenvolvimento de Sistemas;EAD;Campinas;Diego Alves;1;1250;500;0.0;Pendente
+62;16/06/2026;Rafael Almeida;Análise de Dados;EAD;Campinas;Carla Souza;1;1500;600;0.0;Pago
+63;08/04/2026;Beatriz Lima;Enfermagem;Presencial;Sorocaba;Diego Alves;1;950;400;100.0;Pago
+64;17/02/2026;Felipe Ribeiro;Análise de Dados;Presencial;Sorocaba;Bruno Costa;2;1500;620;;Pendente
+65;06/08/2026;Enzo Moreira;Enfermagem;EAD;Santos;Diego Alves;1;900;420;100.0;Pago
+66;03/03/2026;Enzo Moreira;Enfermagem;Híbrido;Campinas;Bruno Costa;1;900;380;150.0;Pago
+67;01/06/2026;Pedro Martins;Logística;EAD;Campinas;Carla Souza;2;780;300;0.0;Pendente
+68;30/05/2026;Julia Ferreira;Administração;Híbrido;Sorocaba;Ana Lima;1;650;250;0.0;Cancelado
+69;27/01/2026;Larissa Gomes;Administração;EAD;São Paulo;Ana Lima;1;650;270;50.0;Pago
+70;05/06/2026;Beatriz Lima;Desenvolvimento de Sistemas;Presencial;São Paulo;Diego Alves;1;1250;480;0.0;Pago
+71;15/08/2026;Felipe Ribeiro;Análise de Dados;Híbrido;Sorocaba;Carla Souza;1;1550;600;100.0;Pago
+72;16/05/2026;Beatriz Lima;Análise de Dados;Presencial;Campinas;Bruno Costa;1;1550;580;0.0;Pago
+73;29/08/2026;Felipe Ribeiro;Análise de Dados;Presencial;Campinas;Carla Souza;1;1450;620;50.0;Pago
+74;16/05/2026;Clara Batista;Segurança do Trabalho;Híbrido;Campinas;Diego Alves;1;850;330;150.0;Pago
+75;26/03/2026;Felipe Ribeiro;Administração;Híbrido;Guarulhos;Carla Souza;1;650;250;0.0;Pago
+76;10/09/2026;Leticia Nunes;Desenvolvimento de Sistemas;Presencial;Guarulhos;Ana Lima;2;1200;520;0.0;Pago
+77;11/01/2026;Larissa Gomes;Desenvolvimento de Sistemas;Híbrido;São Paulo;Bruno Costa;2;1250;500;0.0;Pago
+78;12/08/2026;Vinicius Cardoso;Desenvolvimento de Sistemas;Presencial;Sorocaba;Carla Souza;1;1200;500;0.0;Cancelado
+79;11/09/2026;Felipe Ribeiro;Desenvolvimento de Sistemas;Híbrido;Sorocaba;Ana Lima;1;1150;500;0.0;Pago
+80;26/07/2026;Sofia Teixeira;Desenvolvimento de Sistemas;Presencial;Guarulhos;Diego Alves;1;1200;500;0.0;Cancelado
+81;15/08/2026;Lucas Santos;Desenvolvimento de Sistemas;Presencial;Santos;Bruno Costa;1;1250;500;100.0;Pago
+82;03/05/2026;Rafael Almeida;Enfermagem;EAD;Guarulhos;Ana Lima;1;900;380;0.0;Cancelado
+83;20/03/2026;Vinicius Cardoso;Análise de Dados;Híbrido;Santos;Carla Souza;1;1500;580;50.0;Cancelado
+84;16/07/2026;Camila Rocha;Desenvolvimento de Sistemas;Híbrido;Guarulhos;Bruno Costa;2;1200;500;50.0;Pago
+85;02/01/2026;Felipe Ribeiro;Administração;Híbrido;Santos;Diego Alves;1;650;250;100.0;Pago
+86;13/07/2026;Leticia Nunes;Logística;EAD;Campinas;Bruno Costa;1;780;300;0.0;Pago
+87;15/07/2026;Isabela Mendes;Análise de Dados;Híbrido;Campinas;Diego Alves;1;1500;580;0.0;Pago
+88;14/08/2026;Gabriel Costa;Administração;Híbrido;Sorocaba;Ana Lima;1;700;250;0.0;Pendente
+89;16/05/2026;Amanda Carvalho;Segurança do Trabalho;Híbrido;Sorocaba;Ana Lima;1;1200;330;50.0;Pendente
+90;07/09/2026;Enzo Moreira;Enfermagem;Presencial;Guarulhos;Ana Lima;2;950;420;0.0;Pago
+91;20/02/2026;Gabriel Costa;Logística;EAD;Campinas;Carla Souza;1;780;300;150.0;Pago
+92;16/03/2026;Pedro Martins;Administração;Híbrido;Sorocaba;Bruno Costa;1;600;250;0.0;Pago
+93;12/09/2026;Clara Batista;Logística;Presencial;Campinas;Diego Alves;1;830;320;100.0;Pago
+94;22/03/2026;Beatriz Lima;Segurança do Trabalho;EAD;Santos;Carla Souza;1;850;330;50.0;Pendente
+95;16/07/2026;Vinicius Cardoso;Segurança do Trabalho;Presencial;Campinas;Diego Alves;3;850;370;0.0;Pago
+96;22/07/2026;Larissa Gomes;Análise de Dados;Presencial;Guarulhos;Ana Lima;1;1500;600;0.0;Cancelado
+97;23/04/2026;Camila Rocha;Análise de Dados;Híbrido;Santos;Bruno Costa;2;1500;600;100.0;Pendente
+98;06/07/2026;Julia Ferreira;Segurança do Trabalho;Presencial;Santos;Carla Souza;1;800;350;50.0;Pago
+99;07/07/2026;Sofia Teixeira;Segurança do Trabalho;Híbrido;Santos;Bruno Costa;1;850;350;100.0;Pendente
+100;28/02/2026;Leticia Nunes;Enfermagem;Presencial;Campinas;Bruno Costa;2;900;400;150.0;Pendente
+101;08/01/2026;Larissa Gomes;Segurança do Trabalho;Híbrido;São Paulo;Diego Alves;2;850;350;0.0;Pendente
+102;25/02/2026;Pedro Martins;Enfermagem;EAD;São Paulo; ANA LIMA ;1;900;420;150.0;Cancelado
+103;29/07/2026;Gabriel Costa;Análise de Dados;Presencial;São Paulo;Ana Lima;1;1450;620;150.0;Pago
+104;11/03/2026;Isabela Mendes;Enfermagem;EAD;Santos;Diego Alves;3;850;380;0.0;Pendente
+105;08/09/2026;Davi Freitas;Análise de Dados;EAD;Santos;Ana Lima;2;1500;620;150.0;Pago
+106;20/02/2026;Thiago Barros;Segurança do Trabalho;Híbrido;Santos;Ana Lima;1;850;370;0.0;Pendente
+107;11/01/2026;Lucas Santos;Desenvolvimento de Sistemas;EAD;Campinas;Bruno Costa;1;1150;520;0.0;Pago
+108;30/04/2026;Amanda Carvalho;Análise de Dados;Presencial;Guarulhos;Ana Lima;1;1550;600;100.0;Pago
+109;31/03/2026;Gabriel Costa;Enfermagem;Híbrido;São Paulo;Bruno Costa;2;900;400;100.0;Pago
+110;27/01/2026;Julia Ferreira;Administração;Híbrido;Sorocaba;Ana Lima;1;650;250;0.0;Pago
+110;20/08/2026;Sofia Teixeira;Segurança do Trabalho;Presencial;Guarulhos;Ana Lima;1;850;350;100.0;Pago
+112;16/01/2026;Lucas Santos;Segurança do Trabalho;EAD;Sorocaba;Diego Alves;2;900;350;50.0;Pago
+113;17/03/2026;Beatriz Lima;Segurança do Trabalho;Presencial;Santos;Carla Souza;1;850;330;0.0;Pago
+114;09/08/2026;Gabriel Costa;Desenvolvimento de Sistemas;Híbrido;São Paulo;Bruno Costa;3;1250;500;50.0;Pago
+115;24/07/2026;Matheus Araujo;Desenvolvimento de Sistemas;Híbrido;São Paulo;Carla Souza;1;1200;520;0.0;Pendente
+116;31/08/2026;Beatriz Lima;Desenvolvimento de Sistemas;Presencial;São Paulo;Ana Lima;1;1200;500;0.0;Pago
+117;18/06/2026;Gabriel Costa;Desenvolvimento de Sistemas;EAD;Santos;Diego Alves;1;1200;500;100.0;Pago
+118;17/09/2026;Camila Rocha;Segurança do Trabalho;Presencial;Sorocaba;Bruno Costa;1;850;350;0.0;Pago
+119;26/04/2026;Matheus Araujo;Administração;Híbrido;Guarulhos;Ana Lima;1;700;250;0.0;Pendente
+120;08/06/2026;Amanda Carvalho;Análise de Dados;EAD;São Paulo;Bruno Costa;2;1500;580;0.0;Pago

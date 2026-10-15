@@ -1,0 +1,4 @@
+﻿status do pagamento;quantidade_vendas;faturamento_liquido
+Cancelado;7;7650.0
+Pago;90;108960.0
+Pendente;22;32270.0
