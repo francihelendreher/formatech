@@ -1,0 +1,208 @@
+import numpy as np
+import pandas as pd
+
+# 1. Importar a base
+# decimal=",": valores como 15,90 são lidos como número
+# thousands=".": separadores de milhar como 1.234,50 são ignorados
+df = pd.read_csv(
+    "vendas_brutas_formatech.csv",
+    sep=";",
+    decimal=",",
+    thousands=".",
+    encoding="utf-8-sig",
+)
+
+# 2. Inspecionar antes de tratar
+print("\n--- VISÃO INICIAL ---")
+print(df.head())
+print("\nDimensões:", df.shape)
+print("\nTipos de dados:")
+print(df.dtypes)
+print("\nValores ausentes por coluna:")
+print(df.isnull().sum())
+print("\nIDs de venda duplicados:", df["id_venda"].duplicated().sum())
+
+# 3. Copiar a base original
+df = df.copy()
+
+# 4. Padronizar textos
+colunas_texto = ["cliente", "curso", "modalidade", "cidade",
+                 "vendedor", "status_pagamento"]
+for coluna in colunas_texto:
+    df[coluna] = df[coluna].astype("string").str.strip()
+
+# Nomes de pessoas e cidades: capitalização simples.
+# Não usamos .title() em nomes para não transformar "da" em "Da".
+df["cliente"] = df["cliente"].str.replace(r"\s+", " ", regex=True)
+df["vendedor"] = df["vendedor"].str.title()
+df["cidade"] = df["cidade"].str.title()
+
+# Status e modalidade são categorias: padronizamos com caixa uniforme.
+df["modalidade"] = df["modalidade"].str.title()
+df["status_pagamento"] = df["status_pagamento"].str.title()
+
+# Cursos: normalizar tudo para minúsculas, corrigir variações conhecidas
+# e depois aplicar capitalização só ao que não está no mapa.
+mapa_cursos = {
+    "analise de dados": "Análise de Dados",
+    "análise de dados": "Análise de Dados",
+    "administração": "Administração",
+    "logística": "Logística",
+    "enfermagem": "Enfermagem",
+    "desenvolvimento de sistemas": "Desenvolvimento de Sistemas",
+    "segurança do trabalho": "Segurança do Trabalho",
+}
+df["curso"] = df["curso"].str.lower().str.strip()
+df["curso"] = df["curso"].replace(mapa_cursos)
+
+# Cursos fora do mapa aparecem aqui: são candidatos a nova entrada no mapa
+cursos_nao_mapeados = df.loc[~df["curso"].isin(mapa_cursos.values()), "curso"].unique()
+if len(cursos_nao_mapeados) > 0:
+    print("\nCursos fora do mapa (revisar):", cursos_nao_mapeados)
+
+# 5. Converter tipos
+df["data_venda"] = pd.to_datetime(df["data_venda"], format="%d/%m/%Y", errors="coerce")
+
+colunas_numericas = ["id_venda", "quantidade", "valor_unitario", "custo_unitario", "desconto"]
+for coluna in colunas_numericas:
+    df[coluna] = pd.to_numeric(df[coluna], errors="coerce")
+
+# Mostrar quantos valores foram perdidos na conversão de data, para não passar despercebido
+datas_invalidas = df["data_venda"].isnull().sum()
+print("\nDatas que não puderam ser convertidas:", datas_invalidas)
+
+# 6. Tratar ausentes e duplicidades
+# Cliente ausente: rótulo explícito, sem apagar a venda
+df["cliente"] = df["cliente"].fillna("Não informado")
+
+# Desconto ausente: assumimos zero (sem desconto informado)
+df["desconto"] = df["desconto"].fillna(0)
+
+# Quantidade ausente: não inventamos o valor. Marcamos o registro e
+# o removemos dos cálculos financeiros, mantendo a rastreabilidade.
+df["quantidade_ausente"] = df["quantidade"].isnull()
+print("Vendas com quantidade ausente:", df["quantidade_ausente"].sum())
+
+# Duplicidade de ID: mantém a primeira ocorrência
+df = df.drop_duplicates(subset="id_venda", keep="first")
+
+# Registros sem quantidade ficam fora das contas de faturamento e lucro
+df_valido = df[~df["quantidade_ausente"]].copy()
+
+# 7. Colunas calculadas
+df_valido["faturamento_bruto"] = df_valido["quantidade"] * df_valido["valor_unitario"]
+df_valido["faturamento_liquido"] = df_valido["faturamento_bruto"] - df_valido["desconto"]
+df_valido["custo_total"] = df_valido["quantidade"] * df_valido["custo_unitario"]
+df_valido["lucro_estimado"] = df_valido["faturamento_liquido"] - df_valido["custo_total"]
+
+# 8. Classificações
+# apply() com lambda, como pede o exercício
+df_valido["faixa_lucro"] = df_valido["lucro_estimado"].apply(
+    lambda x: "Lucro positivo" if x > 0 else ("Empate" if x == 0 else "Prejuízo")
+)
+df_valido["venda_alto_valor"] = df_valido["faturamento_liquido"].apply(
+    lambda x: "Sim" if x >= 2000 else "Não"
+)
+
+# Versão vetorizada (comentada), mais rápida em bases grandes:
+# df_valido["faixa_lucro"] = np.select(
+#     [df_valido["lucro_estimado"] > 0, df_valido["lucro_estimado"] == 0],
+#     ["Lucro positivo", "Empate"],
+#     default="Prejuízo",
+# )
+
+# 9. Renomear colunas
+df_valido = df_valido.rename(columns={
+    "data_venda": "data da venda",
+    "status_pagamento": "status do pagamento",
+    "faturamento_liquido": "faturamento líquido",
+    "lucro_estimado": "lucro estimado",
+})
+
+# 10. Filtros de negócio
+vendas_pagas = df_valido[df_valido["status do pagamento"] == "Pago"].copy()
+vendas_lucrativas_pagas = vendas_pagas[vendas_pagas["lucro estimado"] > 0].copy()
+
+# 11. Agrupamentos
+resumo_cursos = df_valido.groupby("curso").agg(
+    quantidade_vendas=("id_venda", "count"),
+    unidades_vendidas=("quantidade", "sum"),
+    faturamento_liquido=("faturamento líquido", "sum"),
+    custo_total=("custo_total", "sum"),
+    lucro_estimado=("lucro estimado", "sum"),
+).reset_index()
+
+# Evita divisão por zero: onde o faturamento é zero, a margem fica vazia (NaN)
+resumo_cursos["margem_percentual"] = (
+    resumo_cursos["lucro_estimado"]
+    / resumo_cursos["faturamento_liquido"].replace(0, np.nan)
+    * 100
+).round(2)
+
+resumo_pagamentos = df_valido.groupby("status do pagamento").agg(
+    quantidade_vendas=("id_venda", "count"),
+    faturamento_liquido=("faturamento líquido", "sum"),
+).reset_index()
+
+resumo_modalidade = df_valido.groupby("modalidade").agg(
+    quantidade_vendas=("id_venda", "count"),
+    faturamento_liquido=("faturamento líquido", "sum"),
+    lucro_estimado=("lucro estimado", "sum"),
+).reset_index()
+
+resumo_mensal = (
+    df_valido.groupby(df_valido["data da venda"].dt.to_period("M"))
+    .agg(
+        quantidade_vendas=("id_venda", "count"),
+        faturamento_liquido=("faturamento líquido", "sum"),
+        lucro_estimado=("lucro estimado", "sum"),
+    )
+    .reset_index()
+)
+resumo_mensal["mes"] = resumo_mensal["data da venda"].astype(str)
+resumo_mensal = resumo_mensal.drop(columns=["data da venda"])
+
+# 12. Ordenação
+resumo_cursos = resumo_cursos.sort_values(by="lucro_estimado", ascending=False)
+maiores_vendas = df_valido.sort_values(by="faturamento líquido", ascending=False).head(10)
+
+# 13. Indicadores gerais (apenas vendas pagas, pois representam dinheiro recebido)
+indicadores = pd.DataFrame({
+    "indicador": [
+        "Registros após limpeza",
+        "Vendas pagas",
+        "Faturamento líquido de vendas pagas",
+        "Lucro estimado de vendas pagas",
+        "Ticket médio das vendas pagas",
+        "Média de lucro por venda paga",
+    ],
+    "valor": [
+        len(df_valido),
+        len(vendas_pagas),
+        vendas_pagas["faturamento líquido"].sum(),
+        vendas_pagas["lucro estimado"].sum(),
+        vendas_pagas["faturamento líquido"].mean(),
+        vendas_pagas["lucro estimado"].mean(),
+    ],
+})
+
+# 14. Exportar
+arquivos = {
+    "vendas_tratadas_formatech.csv": df_valido,
+    "vendas_pagas.csv": vendas_pagas,
+    "vendas_lucrativas_pagas.csv": vendas_lucrativas_pagas,
+    "resumo_por_curso.csv": resumo_cursos,
+    "resumo_por_pagamento.csv": resumo_pagamentos,
+    "resumo_por_modalidade.csv": resumo_modalidade,
+    "resumo_mensal.csv": resumo_mensal,
+    "top_10_vendas.csv": maiores_vendas,
+    "indicadores_gerais.csv": indicadores,
+}
+for nome, tabela in arquivos.items():
+    tabela.to_csv(nome, index=False, sep=";", encoding="utf-8-sig", decimal=",")
+
+print("\n--- INDICADORES GERAIS ---")
+print(indicadores.to_string(index=False))
+print("\n--- RESUMO POR CURSO ---")
+print(resumo_cursos.to_string(index=False))
+print("\nArquivos CSV exportados com sucesso.")
